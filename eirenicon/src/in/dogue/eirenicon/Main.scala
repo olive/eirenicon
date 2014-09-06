@@ -6,13 +6,13 @@ import com.deweyvm.gleany.files.PathResolver
 import com.deweyvm.gleany.data.Point2i
 import com.deweyvm.gleany.saving.{Settings, SettingDefaults}
 import com.deweyvm.gleany.logging.Logger
-import in.dogue.eirenicon.input.HolophoteControls
+import in.dogue.eirenicon.input.EireniconControls
 
 object Main {
   def main(args: Array[String]) {
 
     val iconPaths = Seq("sprites/icon16.png")
-    val settings = new Settings(HolophoteControls, new SettingDefaults() {
+    val settings = new Settings(EireniconControls, new SettingDefaults() {
       val SfxVolume: Float = 0.2f
       val MusicVolume: Float = 0.2f
       val WindowSize: Point2i = Point2i(512,512)
