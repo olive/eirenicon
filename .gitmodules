@@ -1,0 +1,6 @@
+[submodule "gleany"]
+	path = gleany
+	url = https://github.com/deweyvm/gleany.git
+[submodule "antiqua"]
+	path = antiqua
+	url = https://github.com/olive/antiqua.git
