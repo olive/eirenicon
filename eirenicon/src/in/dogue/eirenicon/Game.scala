@@ -6,6 +6,10 @@ import in.dogue.eirenicon.input.Controls
 
 object Game {
   var t = 0
+  var frame = 0
+  val Cols = 64
+  val Rows = 48
+  val TileSize = 16
 }
 
 class Game(initializer: GleanyInitializer) extends GleanyGame(initializer) {
