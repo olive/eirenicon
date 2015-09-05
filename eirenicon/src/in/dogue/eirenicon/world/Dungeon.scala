@@ -17,14 +17,13 @@ object Dungeon {
       }
       DTile(tile, ttype)
     }
-    Dungeon(tiles)
+    val mask = arr.map { case (_, ttype) => ttype == Free}
+    Dungeon(tiles, mask)
   }
 }
 
-case class Dungeon private (tiles:Array2d[DTile]) {
-  def draw(tr:TileRenderer):TileRenderer = {
-    tiles.foldLeft (tr) {case (tr, (pp, t)) =>
-      tr <+< t.draw(pp)
-    }
-  }
+case class Dungeon private (tiles:Array2d[DTile], mask:Array2d[Boolean]) {
+  val cols = tiles.cols
+  val rows = tiles.rows
+  def isSolid(pos:Cell) = !mask.get(pos)
 }

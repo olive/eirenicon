@@ -15,7 +15,7 @@ object Main {
     val settings = new Settings(EireniconControls, new SettingDefaults() {
       val SfxVolume: Float = 0.2f
       val MusicVolume: Float = 0.2f
-      val WindowSize: Point2i = Point2i(64*16,48*16)
+      val WindowSize: Point2i = Point2i(Game.Cols*16,Game.Rows*16)
       val DisplayMode: Int = 0
     }, false)
     val config = new GleanyConfig(settings, "Eirenicon", iconPaths)

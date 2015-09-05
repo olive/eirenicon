@@ -11,7 +11,6 @@ case object Wall extends TileType
 
 
 case class DTile(t:Tile, tt:TileType) {
-  def draw(ij:Cell)(tr:TileRenderer):TileRenderer = {
-    tr <+ (ij, t)
-  }
+
+  def render = t
 }
