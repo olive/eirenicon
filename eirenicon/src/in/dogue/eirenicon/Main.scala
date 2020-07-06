@@ -11,7 +11,7 @@ import in.dogue.eirenicon.input.EireniconControls
 object Main {
   def main(args: Array[String]) {
 
-    val iconPaths = Seq("sprites/icon16.png")
+    val iconPaths = Seq()//"sprites/icon16.png")
     val settings = new Settings(EireniconControls, new SettingDefaults() {
       val SfxVolume: Float = 0.2f
       val MusicVolume: Float = 0.2f

@@ -7,8 +7,8 @@ import in.dogue.eirenicon.input.Controls
 object Game {
   var t = 0
   var frame = 0
-  val Cols = 64+48
-  val Rows = 64
+  val Cols = 64+32
+  val Rows = 48
   val TileSize = 16
 }
 

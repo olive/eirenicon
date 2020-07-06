@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
-  <component name="FacetManager">
-    <facet type="scala" name="Scala">
-      <configuration>
-        <option name="compilerLibraryLevel" value="Global" />
-        <option name="compilerLibraryName" value="scala-compiler" />
-        <option name="compilerOptions" value="-deprecation -feature -unchecked -Xlint -Yno-adapted-args -Ywarn-value-discard -Xfatal-warnings -language:implicitConversions -language:higherKinds -language:existentials -language:postfixOps -Yinline-warnings -Xcheckinit" />
-      </configuration>
-    </facet>
-  </component>
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/out" />
+    <output-test url="file:///test/eirenicon" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
@@ -17,10 +10,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="scala-library" level="application" />
     <orderEntry type="library" name="libs" level="project" />
+    <orderEntry type="library" name="scala-sdk-2.12.1" level="application" />
     <orderEntry type="module" module-name="antiqua" />
     <orderEntry type="module" module-name="gleany" />
   </component>
 </module>
-
